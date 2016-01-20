@@ -1,11 +1,11 @@
-FROM daocloud.io/library/ubuntu:14.04
+FROM daocloud.io/library/django:1.7
 MAINTAINER daocloud
 
-RUN sudo apt-get install mysql-server mysql-client
+RUN apt-get install mysql-server mysql-client
 
-RUN sudo apt-get install python-pip  
-RUN sudo pip install Django==1.6.5  
-RUN sudo apt-get install python-mysqldb 
+RUN apt-get install python-pip  
+RUN pip install Django==1.6.5  
+RUN apt-get install python-mysqldb 
 
 RUN mkdir /code
 WORKDIR /code
