@@ -1,2 +1,2 @@
-/code/mysite/mange.py python manage.py runserver
-
+/code/manage.py syncdb --noinput
+/code/manage.py runserver
